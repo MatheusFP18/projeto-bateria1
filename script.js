@@ -54,3 +54,114 @@ elementsArray.forEach(function(elem) {
         playSound(key);
     })
 })
+
+var buttons = document.querySelectorAll('.key');
+
+buttons.forEach((btn) => {
+   
+    btn.addEventListener('click' , (e) => {
+        const value1 = e.target.innerText;
+
+        switch (value1){
+
+            case 'Q':
+                let audioElementQ = document.querySelector('#s_keyq');
+                audioElementQ.play()
+                audioElementQ.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+
+            case 'W':
+                let audioElementW = document.querySelector('#s_keyw');
+                audioElementW.play()
+                audioElementW.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+
+            case 'E':
+                let audioElementE = document.querySelector('#s_keye');
+                audioElementE.play()
+                audioElementE.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+
+            case 'A':
+                let audioElementA = document.querySelector('#s_keya');
+                audioElementA.play()
+                audioElementA.currentTime = 0;
+                btn.classList.add('active')
+
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+
+            case 'S':
+                let audioElementS = document.querySelector('#s_keys');
+                audioElementS.play()
+                audioElementS.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+
+            case 'D':
+                let audioElementD = document.querySelector('#s_keyd');
+                audioElementD.play()
+                audioElementD.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+
+            case 'Z':
+                let audioElementZ = document.querySelector('#s_keyz');
+                audioElementZ.play()
+                audioElementZ.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+
+            case 'X':
+                let audioElementX = document.querySelector('#s_keyx');
+                audioElementX.play()
+                audioElementX.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+               
+            case 'C':
+                let audioElementC = document.querySelector('#s_keyc');
+                audioElementC.play()
+                audioElementC.currentTime = 0;
+                btn.classList.add('active')
+   
+                setTimeout(()=> {
+                    btn.classList.remove('active');
+                }, 300);
+                break;
+        }
+    })
+})
