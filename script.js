@@ -1,4 +1,5 @@
 document.body.addEventListener('keyup', (event)=> {
+    playSound( event.code.toUpperCase() );
     playSound( event.code.toLowerCase() );
 });
 
@@ -40,3 +41,11 @@ function playComposition(songArray) {
         wait += 250;
     }
 }
+
+let elementsArray = document.querySelectorAll('.key');
+elementsArray.forEach(function(elem) {
+    elem.addEventListener('click', (event) => {
+        let key = `key${event.target.value}`.toLowerCase();
+        playSound(key);
+    })
+})
