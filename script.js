@@ -1,5 +1,10 @@
+document.addEventListener("keydown", (event) => {
+    const keyPressed = event.key.toLowerCase(); // Normaliza para minúsculas
+    const element = document.querySelector(`[data-key="${keyPressed}"]`);
+
+});
+
 document.body.addEventListener('keyup', (event)=> {
-    playSound( event.code.toUpperCase() );
     playSound( event.code.toLowerCase() );
 });
 
